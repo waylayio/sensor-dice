@@ -1,5 +1,5 @@
 {
-  "name": "@waylay/sensor-dice",
+  "name": "@waylay-plugins/dice",
   "version": "1.0.1",
   "description": "Dice generates states between ONE and SIX based on a random value. Raw Data is a randomValue used to compute the output state.",
   "main": "index.js",
