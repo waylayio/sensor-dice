@@ -1,0 +1,26 @@
+{
+  "name": "@waylay/sensor-dice",
+  "version": "1.0.1",
+  "description": "Dice generates states between ONE and SIX based on a random value. Raw Data is a randomValue used to compute the output state.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "Experimental"
+  ],
+  "author": "Veselin Pizurica",
+  "license": "ISC",
+  "waylay": {
+    "type": "sensor",
+    "iconURL": "https://raw.githubusercontent.com/waylayio/documentation/master/icons/dice.png",
+    "supportedStates": ["ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX"],
+    "requiredProperties": [],
+    "requiredRawData": [],
+    "rawData": [{
+      "parameter": "randomValue",
+      "dataType": "double"
+    }]
+  },
+  "devDependencies": {
+    "tape": "^4.4.0"
+  }
+}
