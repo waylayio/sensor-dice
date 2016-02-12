@@ -1,17 +1,32 @@
 module.exports = function (options, send) {
-  var randomValue = Math.random()
-  var state
+  var random = Math.random()
+  var side = (Math.floor(random * 6) + 1)
 
-  if (randomValue > 0.85) state = 'ONE'
-  else if (randomValue > 0.7) state = 'TWO'
-  else if (randomValue > 0.55) state = 'THREE'
-  else if (randomValue > 0.4) state = 'FOUR'
-  else if (randomValue > 0.25) state = 'FIVE'
-  else state = 'SIX'
+  var state
+  switch (side) {
+    case 1:
+      state = 'one'
+      break
+    case 2:
+      state = 'two'
+      break
+    case 3:
+      state = 'three'
+      break
+    case 4:
+      state = 'four'
+      break
+    case 5:
+      state = 'five'
+      break
+    case 6:
+      state = 'six'
+      break
+  }
 
   var value = {
-    observedState: state,
-    rawData: { randomValue: randomValue }
+    observedState: state.toUpperCase(),
+    rawData: { randomValue: random }
   }
 
   send(null, value)
