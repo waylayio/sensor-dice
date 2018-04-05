@@ -13,7 +13,7 @@
   "license": "ISC",
   "waylay": {
     "type": "sensor",
-    "iconURL": "https://raw.githubusercontent.com/waylayio/documentation/master/icons/dice.png",
+    "iconURL": "https://static.waylay.io/icons/dice.png",
     "supportedStates": ["ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX"],
     "requiredProperties": [],
     "requiredRawData": [],
